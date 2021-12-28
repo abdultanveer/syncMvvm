@@ -13,4 +13,6 @@ public interface WordDao {
     @Insert
     void insert(Word word);
 
+    @Query("SELECT * FROM Word WHERE title LIKE :word ")
+    public List<Word> findNote(String word);
 }
