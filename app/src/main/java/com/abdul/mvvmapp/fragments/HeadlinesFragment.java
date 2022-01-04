@@ -22,6 +22,9 @@ public class HeadlinesFragment  extends Fragment implements AdapterView.OnItemCl
         void onHeadlineClick(String headline);
     }
 
+
+
+
     HeadlineClickListener headlineClickListener;
 
     @Override
