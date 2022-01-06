@@ -28,6 +28,7 @@ public class NamesAdapter extends RecyclerView.Adapter<NamesAdapter.NamesVH>{
 
     @Override
     public void onBindViewHolder(@NonNull NamesVH holder, int position) {
+         holder.tvRow.setText(mNames[position]);
 
     }
 

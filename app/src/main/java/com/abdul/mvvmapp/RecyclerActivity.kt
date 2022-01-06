@@ -2,6 +2,7 @@ package com.abdul.mvvmapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class RecyclerActivity : AppCompatActivity() {
@@ -13,5 +14,7 @@ class RecyclerActivity : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.recyclerView)
         var namesAdapter = NamesAdapter(data)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = namesAdapter
     }
 }
