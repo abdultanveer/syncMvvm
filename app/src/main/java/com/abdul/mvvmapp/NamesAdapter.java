@@ -6,8 +6,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class NamesAdapter extends RecyclerView.Adapter<NamesAdapter.NamesVH>
-{
+public class NamesAdapter extends RecyclerView.Adapter<NamesAdapter.NamesVH>{
+    String[] mNames;
+     public NamesAdapter(String[] names){
+         mNames = names;
+     }
 
     @NonNull
     @Override
@@ -17,7 +20,7 @@ public class NamesAdapter extends RecyclerView.Adapter<NamesAdapter.NamesVH>
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mNames.length;
     }
 
     @Override

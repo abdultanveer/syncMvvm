@@ -12,5 +12,6 @@ class RecyclerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_recycler)
 
         recyclerView = findViewById(R.id.recyclerView)
+        var namesAdapter = NamesAdapter(data)
     }
 }
